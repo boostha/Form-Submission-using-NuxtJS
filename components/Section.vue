@@ -8,7 +8,7 @@
           <input type="text" name="idea-title" v-model="idea.title" class="border-solid border-2 p-1">
           <label for="idea-description" class="text-xl">Idea Description</label>
           <input type="text" name="idea-description" v-model="idea.description" class="border-solid border-2 p-1">
-          <button class="bg-red-300 py-1 px-4 mt-4 rounded" @submit.prevent="onSubmit">Add Idea</button>
+          <button class="bg-red-300 py-1 px-4 mt-4 rounded" type="submit">Add Idea</button>
         </fieldset>
       </form>
     </div>
