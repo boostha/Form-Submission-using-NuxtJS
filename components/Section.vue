@@ -49,7 +49,10 @@ export default {
     }
   },
   methods : {
-    addIdea: function() {
+    addIdea: function(event) {
+
+      event.preventDefault()
+
       return this.ideas.push({
         title: this.idea.title,
         description: this.idea.description,
