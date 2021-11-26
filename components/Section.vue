@@ -1,7 +1,7 @@
 <template>
   <main class="flex flex-col items-center justify-center gap-10 my-10">
     <div id="app">
-      <form @submit.prevent="addIdea">
+      <form @submit.prevent="addIdea()">
         <fieldset class="flex flex-col gap-2 items-start justify-center border-solid border-2 p-10">
           <legend class="text-2xl">Add Your Ideas Below</legend>
           <label for="idea-title" class="text-xl">Idea Title</label>
