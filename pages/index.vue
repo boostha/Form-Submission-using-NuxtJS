@@ -2,6 +2,7 @@
 <header>
   <Navigation :navItem='siteAssets' />
   <Hero :heroItem='siteAssets'/>
+  <Section />
   <Footer :foot='siteAssets'/>
 </header>
 </template>
@@ -12,7 +13,7 @@ export default {
     return {
       siteAssets: {
           logo: 'CPNT200',
-          hero: 'Create Something Amazing',
+          hero: 'Ideas for this website',
           footer: '<p>&copy; David Ha</p>',
       }
     }
