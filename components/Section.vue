@@ -10,7 +10,7 @@
         <label for="idea-description" class="text-xl">Idea Description</label>
         <input type="text" name="idea-description" v-model="idea.description" class="border-solid border-2 p-1">
 
-        <button class="bg-red-300 py-1 px-4 mt-4 rounded" type="submit">Add Idea</button>
+        <button class="bg-red-300 py-1 px-4 mt-4 rounded" @submit.prevent="onSubmit">Add Idea</button>
       </fieldset>
     </form>
 
@@ -49,9 +49,7 @@ export default {
     }
   },
   methods : {
-    addIdea: function(event) {
-
-      event.preventDefault()
+    addIdea: function() {
 
       return this.ideas.push({
         title: this.idea.title,
@@ -59,6 +57,10 @@ export default {
         counter: this.idea.counter
       })
     },
+
+    onSubmit: function(event) {
+      event.preventDefault()
+    }
   },
 }
 </script>
