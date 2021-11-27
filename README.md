@@ -1,7 +1,7 @@
 # CPNT200-A4
 
 ## Links
-- [Github Pages](https://boostha.github.io/cpnt200-a4/)
+- [Netlify](https://unruffled-wescoff-558514.netlify.app/)
 - [Github Repo](https://github.com/boostha/cpnt200-a4)
 
 ## Code Review
